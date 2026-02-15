@@ -49,9 +49,15 @@ class SilverScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CustomText(text: AppText.silverPrice, color: AppColors.silverColor),
+
+                      CustomText(
+                        text: (state.silverModel.price).toString(),
+                        color: AppColors.silverColor,
+                      ),
+
                       SizedBox(width: 5,height: 5,),
-                      CustomText (text: AppText.silverPriceUSD, color: AppColors.silverColor),
+
+                      CustomText(text: AppText.silverPriceUSD, color: AppColors.silverColor),
                     ],
 
                   )

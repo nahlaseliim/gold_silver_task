@@ -1,9 +1,9 @@
 class GoldModel {
-  final String name;
+  final String? name;
   final num price;
-  final String symbol;
-  final String upDatedAt;
-  final String upDatedAtReadable;
+  final String? symbol;
+  final String? upDatedAt;
+  final String? upDatedAtReadable;
 
   GoldModel( {
     required this.price,

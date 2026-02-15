@@ -1,9 +1,9 @@
 class SilverModel {
-  final String name;
+  final String? name;
   final num price;
-  final String symbol;
-  final String upDatedAt;
-  final String upDatedAtReadable;
+  final String? symbol;
+  final String? upDatedAt;
+  final String? upDatedAtReadable;
 
   SilverModel( {
     required this.price,
@@ -16,10 +16,10 @@ class SilverModel {
   factory SilverModel.fromJson(Map<String, dynamic> json) {
     return SilverModel(
       name: json['name'],
-      price: json['price'],
+      price: json['price']?.toDouble() ?? 0.0,
       symbol: json['symbol'],
-      upDatedAt: json['upDatedAt'],
-      upDatedAtReadable: json['upDatedAtReadable'],
+      upDatedAt: json['updatedAt'],
+      upDatedAtReadable: json['updatedAtReadable'],
     );
   }
 }

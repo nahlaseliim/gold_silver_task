@@ -54,7 +54,7 @@ class GoldScreen extends StatelessWidget {
                           color: AppColors.goldColor),
                       SizedBox(width: 5, height: 5,),
                       CustomText(
-                          text: state.goldModel.symbol.toString(),
+                          text: AppText.goldPriceUSD,
                           color: AppColors.goldColor),
                     ],
 
